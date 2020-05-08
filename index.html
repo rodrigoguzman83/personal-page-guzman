@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimun-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Page | Luis Rodrigo Guzman</title>
+    <!--PARA USAR FUENTES DE GOOGLE https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--PARA USAR LOS ICONOS DE FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/8beb034d2f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="portada" id="portada">
+        <div class="textos-portada">
+            <h1>Luis Rodrigo Guzman</h1>
+            <p>Desarrollador Full Stack</p>
+            <div class="social-icons">
+                <a href="https://github.com/rodrigoguzman83" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rodrigo-guzman-8b481912/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="#contacto"><i class="far fa-envelope"></i></a>
+            </div>
+            <a href="#aboutMe">Conoceme</a>
+        </div>
+    </header>
 
+    <section class="section-about-me" id="aboutMe">
+        <div class="contenedor">
+            <h2 class="titulo">Sobre mi</h2>
+            <!--a href="#portada">Volver al inicio</a-->
+            <div class="content-about-me">
+                <div class="about-me">
+                    <img class="about-me-img" src="img/yo.jpg" alt="">
+                </div>
+                <div class="about-me">
+                    <p class="parrafo">Me considero una persona responsable, honesta y trabajadora, que siempre está
+                        dispuesto
+                        a aprender y progresar.</p>
+                    <p class="parrafo">Me entusiasma trabajar con diferentes tecnologias: PHP, .NET, JAVA, JAVASCRIPT.
+                    </p>
+                    <a href="micv2020.pdf" class="download" download="rodrigoguzmancv">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-laboral">
+        <div class="contenedor">
+            <h2 class="titulo">Experencia Laboral</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <section class="section-education">
+        <div class="contenedor">
+            <h2 class="titulo">Educacion</h2>
+            <details class="acordeon-education">
+                <summary>TERCIARIO:Tecnico Universitario en Programacion - FRGP</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </details>
+            <details class="acordeon-education">
+                <summary>SECUNDARIO:Bachiller Mercantil - INSTITUTO CRISTO REY</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="contenedor">
+            <h2 class="titulo">Contacto</h2>
+            <h3 class="titulo">Tenés una propuesta acorde a mi perfil? Hablemos!</h3>
+            <h3 class="titulo">Tenés un proyecto en mente? Hablemos!</h3>
+            <div class="content-contact">
+                <div class="contact">
+                    <form action="" class="form">
+                        <input class="input" type="text" name="" id="" placeholder="Nombre">
+                        <input class="input" type="email" name="" id="" placeholder="Email">
+                        <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input class="input" type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="contact">
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:rodrigoluisguzman@gmail.com">rodrigoluisguzman@gmail.com</a>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <a href="tel:+541140365765">
+                            1140365765</a>
+                    </div>
+                    <div class="info">
+                        <i class="fab fa-skype"></i>
+                        <a href="skype:rodrivagoneta30?call">rodrivagoneta30</a>
+                    </div>
+                </div>
+    </footer>
 </body>
 
 </html>
