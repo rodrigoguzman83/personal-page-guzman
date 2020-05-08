@@ -189,20 +189,23 @@ input[type="email"] {
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .form textarea {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
-input[type="submit"] {
+button {
     width: 120px;
     text-align: center;
     padding: 14px 0;
+    border-radius: 10px;
 }
 
-input[type="submit"]:hover {
+button:hover {
     cursor: pointer;
     color: tomato;
     background: #fff;
