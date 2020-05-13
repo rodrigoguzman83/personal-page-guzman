@@ -51,6 +51,11 @@ body {
     color: #fff;
 }
 
+.textos-portada a:hover {
+    text-decoration: none;
+}
+
+
 /*Iconos*/
 .social-icons a {
     display: inline-block;
@@ -104,17 +109,12 @@ body {
 
 .download {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none !important;
     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     padding: 12px 15px;
     border-radius: 8px;
     color: #fff;
-}
-
-/* section Experiencia Laboral*/
-.section-laboral {
-    background: #1777d8;
-    color: #fff;
+    margin-top: 10px;
 }
 
 /*section About Me*/
@@ -134,27 +134,72 @@ body {
     width: 100%;
 }
 
-/* section Educacion*/
+/*Skills*/
+.section-skills {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.box-skills {
+    margin: 30px 30px 0 0;
+}
+
+.box-skills h4 {
+    font-size: 16px;
+    background: #f2f2f2;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+}
+
+.box-skills i {
+    color: #1FDE82;
+    font-size: 20px;
+}
+
+/* section Laboral*/
 .section-laboral {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     background: #1777d8;
     color: #fff;
 }
 
-.acordeon-education {
+.acordeon-laboral {
     padding: 20px;
     border: 1px solid #ccc;
     background: #f6f6f6;
+    color: black;
     margin-bottom: 1em;
     border-radius: 4px;
     box-shadow: inset 0 0 8em #ddd;
 }
 
-.acordeon-education :hover {
+.acordeon-laboral:hover {
     cursor: pointer;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+/*Section Education*/
+.content-education {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.box-education {
+    font-size: 24px;
+    background: gray;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+    margin: 10px;
 }
 
 /* footer */
@@ -203,11 +248,13 @@ button {
     text-align: center;
     padding: 14px 0;
     border-radius: 10px;
+    color: #fff;
+    background: transparent;
 }
 
 button:hover {
     cursor: pointer;
-    color: tomato;
+    color: blue;
     background: #fff;
 }
 
@@ -232,4 +279,26 @@ button:hover {
 .info a {
     text-decoration: none;
     color: ivory;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #adb6c7;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color: #fff;
+    background-color: #1FDE82;
+    border-color: #1FDE82;
 }
